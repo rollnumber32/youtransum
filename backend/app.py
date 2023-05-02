@@ -30,6 +30,14 @@ def summarize(transcript):
 
 
 app = Flask(__name__)
-app.route("/")
+
+
+@app.route("/api/summarize/<url>")
+def get_summary(url):
+    transcript = fetch_transcript(url)
+    summary = summarize(transcript)
+    return summary
+
+
 if __name__ == "__main__":
-    app.run()
+    app.run(host="localhost", port=8000)

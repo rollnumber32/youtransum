@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "youtransum",
+  "description": "An extension to provide summarized transcript of a YouTube subtitle eligible video.",
+  "version": "1.0",
+  "permissions": ["tabs"],
+  "host_permissions": ["http://localhost:8000/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/watch?v=*"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
