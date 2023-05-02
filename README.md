@@ -47,5 +47,5 @@ chrome://extensions
 
 ...and you are good to go.
 
-**Note**: You'll need to install the [this](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en) chrome extension too.
+**Note**: You'll need to install the [this](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en) chrome extension too.\
 **Note**: You must have python and pip installed.
